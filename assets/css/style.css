@@ -63,19 +63,59 @@ li::marker {
 }
 
 /* end Navbar */
+/* start Content */
+
 .container {
-    display: flex;
-    height: 100vh;
+    display: grid;
+    grid-template-columns:40% 60%;
     justify-content: space-between;
 }
+.container .item{
+    border: 1px solid var(--Blue-200);
+}
+.container .hero .item:nth-child(1){
+    border-left: none;
+    border-right:none;
+    border-top: none;
+    border-bottom: none;
+}
+.container .stats .item:nth-child(2),.container .stats .item:nth-child(1){
+    border-top:none;
+    border-bottom:none;
+}
+.container .stats .item:nth-child(3),.container .stats .item:nth-child(4){
+    border-bottom:none;
+}
+.container .stats .item:nth-child(2),
+.container .stats .item:nth-child(4)
+{
 
+    border-right:none;
+    border-left:none;
+}
+.container .item h1{
+    color:white;
+    font-size: 38px;
+    margin-left:20px;
+    width:45%;
+}
+.container .item .hero-txt{
+    font-size: 14px;
+    margin-left:20px;
+    width:45%;
+    color :var(--Blue-200);
+}
+.stats{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 /* .item {
     background-color: lightgray;
     padding: 20px;
     text-align: center;
     border: 1px solid #ccc;
 } */
-
+/* End Content */
 /* Start Footer */
 .footer {
     border-top: 1px solid var(--Blue-200);
