@@ -1,0 +1,90 @@
+:root {
+    --Blue-700: hsl(228, 99%, 58%);
+    --Blue-200: hsl(224, 100%, 95%);
+    --Blue-400: hsl(220, 100%, 64%);
+    --Blue-600: hsl(228, 100%, 60%);
+    --Blue-700: hsl(228, 99%, 58%);
+}
+
+/* // <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name                             */
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--Blue-700);
+}
+
+/* start Navbar */
+.nav {
+    color: var(--Blue-200);
+    background-color: var(--Blue-700);
+    border-bottom: 1px solid var(--Blue-200);
+}
+
+.nav .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 40%;
+}
+
+.logo-txt {
+    font-size: 14px;
+}
+
+li::marker {
+    font-size: 18px;
+}
+
+.icon {
+    width: 40%;
+}
+
+.hamburger span {
+    color: white;
+    width: 26px;
+    height: 3px;
+    display: block;
+    background-color: white;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin: 0 10px 5px auto;
+    text-align: left;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+/* end Navbar */
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/* .item {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+} */
+
+/* Start Footer */
+.footer {
+    border-top: 1px solid var(--Blue-200);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Blue-700);
+    color: var(--Blue-200);
+    padding: 20px;
+    text-align: center;
+}
+
+/* End Footer */
