@@ -8,7 +8,11 @@
 
 /* // <weight>: Use a value from 100 to 900
 // <uniquifier>: Use a unique and descriptive class name                             */
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -21,7 +25,7 @@ body {
 .nav {
     color: var(--Blue-200);
     background-color: var(--Blue-700);
-    border-bottom: 1px solid var(--Blue-200);
+    border-bottom: 1px solid var(--Blue-400);
 }
 
 .nav .content {
@@ -36,6 +40,7 @@ body {
 
 .logo-txt {
     font-size: 14px;
+    margin:20px 40px;
 }
 
 li::marker {
@@ -69,15 +74,24 @@ li::marker {
     display: grid;
     grid-template-columns:40% 60%;
     justify-content: space-between;
+    height: calc(100vh - 61.5px - 60px);
 }
 .container .item{
-    border: 1px solid var(--Blue-200);
+    border: 1px solid var(--Blue-400);
 }
 .container .hero .item:nth-child(1){
-    border-left: none;
+    display:flex;
+    flex-direction:column;
+    /* align-items:center; */
+    /* align-items:center; */
+    justify-content:center;
+    height:100%;
+    /* border-left: none;
     border-right:none;
     border-top: none;
-    border-bottom: none;
+    border-bottom: none; */
+    border:none;
+
 }
 .container .stats .item:nth-child(2),.container .stats .item:nth-child(1){
     border-top:none;
@@ -98,6 +112,7 @@ li::marker {
     font-size: 38px;
     margin-left:20px;
     width:45%;
+    margin-bottom: 20px;
 }
 .container .item .hero-txt{
     font-size: 14px;
@@ -109,6 +124,25 @@ li::marker {
     display:grid;
     grid-template-columns: repeat(2, 1fr);
 }
+.stats .item .stat{
+    display:flex;
+    justify-content:space-between;
+    margin: 15px 30px;
+    align-items:center;
+    color: white;
+}
+.stats .item .stat-txt{
+    margin:150px 30px 10px 30px;
+    color: white;
+}
+.stats .item .stat .number{
+    font-size: 24px;
+}
+.stats .item .stat-txt p{
+    color:var(--Blue-200);
+    margin-top: 10px;
+    margin-bottom: 10px;  
+}
 /* .item {
     background-color: lightgray;
     padding: 20px;
@@ -118,7 +152,7 @@ li::marker {
 /* End Content */
 /* Start Footer */
 .footer {
-    border-top: 1px solid var(--Blue-200);
+    border-top: 1px solid var(--Blue-400);
     display: flex;
     justify-content: space-between;
     background-color: var(--Blue-700);
