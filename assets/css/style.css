@@ -1,5 +1,4 @@
 :root {
-    --Blue-700: hsl(228, 99%, 58%);
     --Blue-200: hsl(224, 100%, 95%);
     --Blue-400: hsl(220, 100%, 64%);
     --Blue-600: hsl(228, 100%, 60%);
@@ -162,3 +161,7 @@ li::marker {
 }
 
 /* End Footer */
+.item:hover{
+    cursor:pointer;
+    background-color: var(--Blue-600);
+}
