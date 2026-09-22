@@ -194,3 +194,21 @@ li::marker {
 }
 
 /* End Footer */
+/* Menu Panel */
+.menu-panel {
+    position: absolute;
+    top: 61.5px;
+    right: 0;
+    width: 200px;
+    height: calc(100vh - 61.5px);
+    background-color: var(--Blue-700);
+    border-left: 1px solid var(--Blue-400);
+    display: block;
+    
+}
+.menu-panel a {
+    display: block;
+    padding: 10px;
+    color: var(--Blue-200);
+    text-decoration: none;
+}
